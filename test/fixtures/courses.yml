@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  currency_sign: USD
+  rate: 1.01
+  uptodate: "2018-03-23 06:56:09"
+
+two:
+  currency_sign: USD
+  rate: 9.99
+  uptodate: "2018-03-23 06:56:09"

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courser</title>
+    <%= csrf_meta_tags %>
+    <%= include_gon %>
+     <%= action_cable_meta_tag %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= stylesheet_pack_tag 'courser_vue' %>
+    <%= javascript_pack_tag 'courser_vue' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+</html>

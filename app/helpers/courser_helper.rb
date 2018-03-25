@@ -1,0 +1,2 @@
+module CourserHelper
+end
