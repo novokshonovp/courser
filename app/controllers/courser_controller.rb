@@ -1,5 +1,5 @@
 class CourserController < ApplicationController
-  DATES_FORMAT= '%Y-%m-%d %H:%M %p'
+  DATES_FORMAT = '%Y-%m-%d %H:%M %p'.freeze
 
   def course
     gon.currency = 'USD'
@@ -36,7 +36,6 @@ class CourserController < ApplicationController
     ActionCable.server.broadcast CourseChannel::CHANNEL_NAME,
                                  currency_sign: course.currency_sign,
                                  rate: course.rate
-
   end
 
   def course_params

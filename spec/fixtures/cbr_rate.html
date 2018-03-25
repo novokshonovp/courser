@@ -1,0 +1,436 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- (c) Art. Lebedev Studio | http://www.artlebedev.ru/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>База данных по курсам валют | Банк России</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+
+<link rel="stylesheet" type="text/css" href="/f/r/global/main.css" media="all" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/f/r/global/main-ie7.css" media="all"><![endif]-->
+<link rel="stylesheet" type="text/css" href="/f/r/global/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/f/r/faq/faq.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/glide.core.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/vision-impaired.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/icomoon-styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/spike.css?t=1" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/fotorama.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/gallery-slider.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/sprites/sprite.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/table/table.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/gallery.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/global/jquery.mcustomscrollbar.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/regions/regions.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/reception/reception.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/f/r/search-map/search-map.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="/f/r/global/cal.css" media="all" />
+
+<script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script>
+<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
+<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TZSWRT"></script>
+<script type="text/javascript" src="/f/r/global/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/f/r/global/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/f/r/global/jquery.cookie.js"></script>
+<script type="text/javascript" src="/f/r/global/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/f/r/global/jquery.glide.min.js"></script>
+<script  type="text/javascript" src="/f/r/global/jcommon.js"></script>
+<script type="text/javascript" src="/f/r/global/commonPopup.js"></script>
+<script type="text/javascript" src="/f/r/global/switcher.js"></script>
+<script type="text/javascript" src="/f/r/global/contentPhotosHelper.js"></script>
+<script type="text/javascript" src="/f/r/global/menu.js"></script>
+<script type="text/javascript" src="/f/r/global/wholeSite.js"></script>
+<script type="text/javascript" src="/f/r/global/switcherFolder.js"></script>
+<script type="text/javascript" src="/f/r/global/switcherFolder_new.js"></script>
+<script type="text/javascript" src="/f/r/global/main.js"></script>
+<script type="text/javascript" src="/f/r/global/table_highlight.js"></script>
+<script type="text/javascript" src="/f/r/global/vision-impaired.js"></script>
+<script type="text/javascript" src="/f/r/global/tooltip.js"></script>
+<script type="text/javascript" src="/f/r/faq/faq.js"></script>
+<script type="text/javascript" src="/f/r/global/fotorama.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=ru"></script>
+<script type="text/javascript" src="/f/r/global/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/f/r/global/packery-mode.pkgd.min.js"></script>
+<script type="text/javascript" src="/f/r/global/gallery.js"></script>
+<script type="text/javascript" src="/f/r/global/jquery.mcustomscrollbar.concat.min.js"></script>
+<script type="text/javascript" src="/f/r/text-new/example.js"></script>
+<script type="text/javascript" src="/f/r/regions/regions.js"></script>
+<script type="text/javascript" src="/f/r/global/finder.js"></script>
+
+<script src="/js/site.js" type="text/javascript"></script>
+<script src="/js/jquery.ui.datepicker-ru.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/smoothness/jquery-ui-1.9.1.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/f/r/currency_base/currency.css"  media="all" />
+	<link rel="stylesheet" type="text/css" href="/f/r/currency_base/currency_print.css"  media="print" />
+	<script type="text/javascript" src="/js/jquery-ui-1.9.2.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.ui.datepicker-ru.js"></script>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TZSWRT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZSWRT');</script>
+<!-- End Google Tag Manager -->
+
+	<div id="page">
+		<div id="layout" class="cleared">
+            <div class="header">
+                <div class="header__main">
+                    
+<span class="whole_site_opener unselectable"><span class="burger"><span></span></span></span>
+<div class="whole_site no_visited">
+  <div class="whole_site__container">
+    <div id="__wholesite_logo" class="logo no_underline"><a href="/"><span class="ico-logo"></span><span class="ico-logo-short"></span></a></div>
+    <div id="__wholesite_opener" class="whole_site_opener unselectable"><span class="burger"><span></span></span></div>
+    <span id="__wholesite_closer" class="pseudo popup_close"><i>×</i>Закрыть</span>
+    <div class="whole_site_extra"></div>
+    <div class="whole_site_map_container">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+<!--
+    $(function()
+    {
+        var mapContainer = $(".whole_site_map_container");
+        mapContainer.bind("get_whole_site_map", function (event, doneCallback) {
+            $(".whole_site_extra").html($(".header__extra-inner").html());
+            mapContainer.html("Загружается..."); //todo: loading icon?
+            $.ajax(
+                '/Catalog/SiteMap/GetWholeSite',
+                {
+                    type: "get",
+                    cache: true,
+                    traditional: true,
+                    data: { catalogId: '12355' },
+                    error: function () { mapContainer.html("Не удалось загрузить карту сайта. Попробуйте еще раз."); },
+                    success: function (data) { mapContainer.html(data); doneCallback(); }
+                });
+        });
+    });
+//-->
+</script>
+
+
+<div class="logo no_underline"><a href="/"><span class="ico-logo"></span><span class="ico-logo-short"></span></a></div>
+
+                </div>
+                <div class="header__extra">
+                    
+<div class="header__extra-inner">
+   
+   <div class="important-links"><span class="important-links__item important-links__item_ip"><a href="/reception/">Интернет-приемная</a></span><span class="important-links__item"><a href="/reception/faq/">Ответы на вопросы</a></span></div>
+   
+   <div class="social no_underline">
+      <div class="networks"><a href="https://www.facebook.com/cbr.ru/" target="_blank" class="icon_fb"><i class="ico-social ico-social-fb" title="Facebook"></i></a><a href="https://twitter.com/bank_of_russia" target="_blank" class="icon_tw"><i class="ico-social ico-social-tw" title="Twitter"></i></a><a href="https://www.youtube.com/channel/UC9uayMAC_wWlEh96vCKq1Jw" target="_blank" class="icon_youtube"><i class="ico-social ico-social-yt" title="Youtube"></i></a></div>
+   </div>
+
+<ul class="langs no_visited">
+<li class="selected"><b><!--noindex-->RU<!--/noindex--></b></li>
+<li><a href="/eng/currency_base/daily.aspx?date_req=01.01.2500"><!--noindex-->EN<!--/noindex--></a></li>
+</ul>
+
+
+
+   <div class="search-container">
+       <form action="/search/" class="search" accept-charset="UTF-8">
+           <div class="search-field">
+               <input type="text" placeholder="Поиск" results="10" class="text" name="text">
+               <button class="search-btn" type="submit"><i class="ico-search"></i></button>
+           </div>
+       </form>
+   </div>
+
+
+
+</div>
+
+                </div>
+            </div>
+
+            <div id="nav" class="no_visited">
+                <div class="menu with_bottom_shadow no_visited">
+                    <i class="icon toggler"></i>
+                    
+	<ul><li>
+		<div class="parent">
+		<a href="/currency_base/">База данных по&#160;курсам валют </a>
+		</div>
+
+<ul class="last_level">
+<li><div class="current"><b class="selected">Официальные курсы валют на&#160;заданную дату, устанавливаемые ежедневно</b></div></li><li><div><a href="/currency_base/dynamics.aspx">Динамика официального курса заданной валюты</a></div></li><li><div><a href="/currency_base/monthly.aspx">Официальные курсы валют на&#160;заданную дату, устанавливаемые ежемесячно (до&#160;11.01.2010)</a></div></li><li><div><a href="/currency_base/OldVal.aspx">Курсы валют за&#160;период до&#160;01.07.1992</a></div></li><li><div><a href="/currency_base/GosBankCurs.aspx">Официальные курсы Госбанка СССР</a></div></li><li><div><a href="/currency_base/Press.aspx">Архив информационных сообщений</a></div></li>
+</ul>
+
+	</li></ul>
+
+                </div>
+            </div>
+			<div id="main_wrap">
+				<div id="main">
+					
+					<h1>Официальные курсы валют на заданную дату, устанавливаемые ежедневно</h1>
+										
+					<div id="content">
+						<div class="currency"> 
+						
+<script type="text/javascript">
+  $(function() {
+    $( "#datepicker").datepicker({
+      dateFormat: "dd.mm.yy",
+      changeMonth: true,
+      changeYear: true,
+      minDate: new Date(1992,1-1,1),
+      maxDate: new Date(2018, 2, 24)
+    })
+    .datepicker("setDate",new Date(2500, 0, 1))
+    .change(function(){
+	var date = $(this).datepicker( "getDate" );
+	$("input[name=date_req]").val($.datepicker.formatDate("dd.mm.yy",date));
+	$("form[name=cld]").submit();
+    });
+  });
+</script>
+
+
+
+<form name="cld">
+
+<div id="datepicker"></div>
+<input name="date_req" type="hidden" value="" />
+
+
+</form>
+
+						
+							<h2>Центральный банк Российской Федерации установил с 24.03.2018 следующие курсы иностранных валют к рублю Российской Федерации без обязательств Банка России покупать или продавать указанные валюты по данному курсу
+</h2><table class="data"><tbody><tr><th>Цифр. код</th><th>Букв. код</th><th>Единиц</th><th>Валюта</th><th>Курс</th></tr>
+<tr><td>036</td>
+<td>AUD</td>
+<td>1</td>
+<td>Австралийский доллар</td>
+<td>44,1039</td></tr>
+<tr><td>944</td>
+<td>AZN</td>
+<td>1</td>
+<td>Азербайджанский манат</td>
+<td>33,5431</td></tr>
+<tr><td>051</td>
+<td>AMD</td>
+<td>100</td>
+<td>Армянских драмов</td>
+<td>11,8874</td></tr>
+<tr><td>933</td>
+<td>BYN</td>
+<td>1</td>
+<td>Белорусский рубль</td>
+<td>29,3384</td></tr>
+<tr><td>975</td>
+<td>BGN</td>
+<td>1</td>
+<td>Болгарский лев</td>
+<td>36,0048</td></tr>
+<tr><td>986</td>
+<td>BRL</td>
+<td>1</td>
+<td>Бразильский реал</td>
+<td>17,2243</td></tr>
+<tr><td>348</td>
+<td>HUF</td>
+<td>100</td>
+<td>Венгерских форинтов</td>
+<td>22,5506</td></tr>
+<tr><td>410</td>
+<td>KRW</td>
+<td>1000</td>
+<td>Вон Республики Корея</td>
+<td>52,8954</td></tr>
+<tr><td>344</td>
+<td>HKD</td>
+<td>10</td>
+<td>Гонконгских долларов</td>
+<td>72,7610</td></tr>
+<tr><td>208</td>
+<td>DKK</td>
+<td>10</td>
+<td>Датских крон</td>
+<td>94,5546</td></tr>
+<tr><td>840</td>
+<td>USD</td>
+<td>1</td>
+<td>Доллар США</td>
+<td>57,1072</td></tr>
+<tr><td>978</td>
+<td>EUR</td>
+<td>1</td>
+<td>Евро</td>
+<td>70,4303</td></tr>
+<tr><td>356</td>
+<td>INR</td>
+<td>100</td>
+<td>Индийских рупий</td>
+<td>87,7695</td></tr>
+<tr><td>398</td>
+<td>KZT</td>
+<td>100</td>
+<td>Казахстанских тенге</td>
+<td>17,7987</td></tr>
+<tr><td>124</td>
+<td>CAD</td>
+<td>1</td>
+<td>Канадский доллар</td>
+<td>44,2589</td></tr>
+<tr><td>417</td>
+<td>KGS</td>
+<td>100</td>
+<td>Киргизских сомов</td>
+<td>83,7103</td></tr>
+<tr><td>156</td>
+<td>CNY</td>
+<td>10</td>
+<td>Китайских юаней</td>
+<td>90,3009</td></tr>
+<tr><td>498</td>
+<td>MDL</td>
+<td>10</td>
+<td>Молдавских леев</td>
+<td>34,4850</td></tr>
+<tr><td>934</td>
+<td>TMT</td>
+<td>1</td>
+<td>Новый туркменский манат</td>
+<td>16,3397</td></tr>
+<tr><td>578</td>
+<td>NOK</td>
+<td>10</td>
+<td>Норвежских крон</td>
+<td>73,5207</td></tr>
+<tr><td>985</td>
+<td>PLN</td>
+<td>1</td>
+<td>Польский злотый</td>
+<td>16,6970</td></tr>
+<tr><td>946</td>
+<td>RON</td>
+<td>1</td>
+<td>Румынский лей</td>
+<td>15,0878</td></tr>
+<tr><td>960</td>
+<td>XDR</td>
+<td>1</td>
+<td>СДР (специальные права заимствования)</td>
+<td>83,0556</td></tr>
+<tr><td>702</td>
+<td>SGD</td>
+<td>1</td>
+<td>Сингапурский доллар</td>
+<td>43,4374</td></tr>
+<tr><td>972</td>
+<td>TJS</td>
+<td>10</td>
+<td>Таджикских сомони</td>
+<td>64,6953</td></tr>
+<tr><td>949</td>
+<td>TRY</td>
+<td>1</td>
+<td>Турецкая лира</td>
+<td>14,4261</td></tr>
+<tr><td>860</td>
+<td>UZS</td>
+<td>10000</td>
+<td>Узбекских сумов</td>
+<td>70,1563</td></tr>
+<tr><td>980</td>
+<td>UAH</td>
+<td>10</td>
+<td>Украинских гривен</td>
+<td>21,7324</td></tr>
+<tr><td>826</td>
+<td>GBP</td>
+<td>1</td>
+<td>Фунт стерлингов Соединенного королевства</td>
+<td>80,6068</td></tr>
+<tr><td>203</td>
+<td>CZK</td>
+<td>10</td>
+<td>Чешских крон</td>
+<td>27,7004</td></tr>
+<tr><td>752</td>
+<td>SEK</td>
+<td>10</td>
+<td>Шведских крон</td>
+<td>69,0735</td></tr>
+<tr><td>756</td>
+<td>CHF</td>
+<td>1</td>
+<td>Швейцарский франк</td>
+<td>60,3224</td></tr>
+<tr><td>710</td>
+<td>ZAR</td>
+<td>10</td>
+<td>Южноафриканских рэндов</td>
+<td>48,4164</td></tr>
+<tr><td>392</td>
+<td>JPY</td>
+<td>100</td>
+<td>Японских иен</td>
+<td>54,3800</td></tr>
+</tbody></table>
+<br>
+							<a href="javascript:window.print();" class="print_link"><span>Печать</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+		<div id="for_footer">
+		</div>
+		<div id="footer">
+			
+<div class="wrap cleared no_visited">
+               <i class="ico-footer-logo"></i>
+                <ul id="bottommenu" class="menu cleared">
+<li><a href="/About/">О&#160;сайте</a></li><li><a href="/archive/">Архив</a></li><li><a href="/sitemap/">Поиск и&#160;карта сайта</a></li><li><a href="/links/">Другие ресурсы</a></li>
+
+<li>
+<span class="version-switcher">
+<span class="pseudo version-switcher__link version-switcher__link_impaired">Версия для слабовидящих</span>
+<span class="pseudo version-switcher__link version-switcher__link_normal">Обычная версия</span></span>
+</li>
+
+
+                </ul>
+		<div class="col copy">&copy; Банк России, 2000–2018</div>
+		
+                
+<div class="col contacts">
+    <div class="contacts__item">
+       <p>Адрес: ул. Неглинная, 12, Москва, 107016</p>
+       <p>Телефоны: <nobr>8 800 250-40-72</nobr> (для бесплатных звонков из регионов России), <nobr>+7 495 771-91-00</nobr> (круглосуточно, по рабочим дням), <nobr>факс: +7 495 621-64-65</nobr></p>
+       </div>
+       <div class="contacts__item">
+       <p><a href="/contacts/">Контактная информация</a></p>
+       <p><a href="/press/sms/">О порядке направления Банком России SMS-сообщений</a></p>
+       <p>Вся официальная контактная информация Банка России представлена на официальном сайте Банка России <a href="http://www.cbr.ru">www.cbr.ru</a></p>
+       </div>
+</div>
+			
+</div>
+
+
+		</div>
+	</div>
+</body>
+</html>

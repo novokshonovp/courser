@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20180322051538) do
 
   create_table "courses", force: :cascade do |t|
     t.string "currency_sign"
-    t.decimal "rate", precision: 5, scale: 3
+    t.decimal "rate", precision: 5, scale: 4
     t.datetime "uptodate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -5,7 +5,7 @@
   <div class="row course_admin_form form-inline">
   <%= form_for @course, url: {action: "create"} do |f| %>
       <%= f.text_field :currency_sign, class: 'form-control', value: 'USD', readonly: true %>
-      <%= f.number_field :rate, value: '0', class: :text_field, step: 0.001, min: 0.001, max: 99999.999 %>
+      <%= f.number_field :rate, value: '0', class: :text_field, step: 0.0001, min: 0.0001, max: 99999.9999 %>
       <div class='input-group date' id='datetimepicker'>
         <%= f.text_field :uptodate, class: 'form-control', value: Time.now %>
         <span class="input-group-addon">

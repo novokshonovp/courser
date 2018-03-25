@@ -40,7 +40,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
 gem 'jquery-rails'
-
+gem 'nokogiri'
 
 
 group :development, :test do
@@ -49,6 +49,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
+  gem 'webmock'
+  gem 'simplecov'
 end
 
 group :development do
