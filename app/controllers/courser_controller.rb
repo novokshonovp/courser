@@ -1,9 +1,11 @@
 class CourserController < ApplicationController
-  DATES_FORMAT = '%Y-%m-%d %H:%M %p'.freeze
+  skip_before_action :verify_authenticity_token, except: [:course, :admin, :create]
+
+  DATES_FORMAT = '%Y-%m-%d %H:%M %p %z'.freeze
 
   def course
     gon.currency = 'USD'
-    gon.rate = CourserController.rate
+    gon.rate = ratesync.pull_rate
   end
 
   def admin
@@ -14,12 +16,20 @@ class CourserController < ApplicationController
   def create
     @course = Course.new(course_params)
     if @course.save
+      ratesync.force(@course.rate, @course.uptodate)
       broadcast(@course)
       redirect_to courser_admin_url
     else
       @courses = course_history
       render 'admin'
     end
+  end
+
+  def refresh_rate
+    @course = Course.new(currency_sign: params[:currency_sign],
+                          rate: params[:rate])
+    broadcast(@course)
+    render status: 200, json: { response: "OK" }
   end
 
   def self.rate
@@ -36,6 +46,10 @@ class CourserController < ApplicationController
     ActionCable.server.broadcast CourseChannel::CHANNEL_NAME,
                                  currency_sign: course.currency_sign,
                                  rate: course.rate
+  end
+
+  def ratesync
+    RateSync.new($redis, 'USD')
   end
 
   def course_params

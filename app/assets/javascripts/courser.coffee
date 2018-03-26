@@ -18,6 +18,6 @@ App.course_sync = App.cable.subscriptions.create { channel: "CourseChannel" }, a
 
 $ ->
   $('#datetimepicker').datetimepicker({
-    format: 'Y-M-D h:mm a'
+    format: 'Y-M-D h:mm a ZZ'
     })
   return

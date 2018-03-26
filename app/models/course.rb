@@ -7,6 +7,6 @@ class Course < ApplicationRecord
 
   def date_head_forward?
     return unless uptodate.present?
-    errors.add(:uptodate, "can't be in the past") if uptodate < Time.now
+    errors.add(:uptodate, "can't be in the past") if uptodate.utc < Time.now.utc
   end
 end
