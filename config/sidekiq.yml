@@ -1,0 +1,5 @@
+:schedule:
+  fetcher:
+    cron: '10 * * * * *'   # Every 10 minutes
+    class: RateFetcherJobWorker
+    args: 'USD'

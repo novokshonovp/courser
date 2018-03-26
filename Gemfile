@@ -44,6 +44,7 @@ gem 'nokogiri'
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
 gem 'redis'
+gem 'foreman'
 
 
 

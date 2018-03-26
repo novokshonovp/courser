@@ -16,7 +16,7 @@ class ControllerTrigger
                                    currency_sign: @currency_sign,
                                    rate: @rate)
     unless success_response?(response.code)
-      raise "Error refresh app by #{url},"\
+      raise "Error refresh app by #{app_url},"\
             " code: #{response.code}, #{response.message}"
     end
     true
@@ -27,7 +27,7 @@ class ControllerTrigger
   end
 
   private
-  
+
   def success_response?(response)
     response == SUCCESS
   end
