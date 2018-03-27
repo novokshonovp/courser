@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <p>{{ currency }}: {{ rate}} </p>
+  <div id="rate">
+    <div id="rate_text">
+      {{ currency }}: {{ rate}}
+    </div>
   </div>
 </template>
 
@@ -8,24 +10,24 @@
 export default {
   data: function() {
     return {
-      currency: gon.currency,
+    currency: gon.currency,
       rate: gon.rate
     }
   },
   methods: {
-      update_course: function(data) {
+      update_rate: function(data) {
         this.currency = data.currency_sign;
         this.rate = data.rate;
       }
     },
-  created: function() {
-    this.$parent.$on('update', this.update_course);
+  mounted: function() {
+    this.$parent.$on('update', this.update_rate);
   }
 }
 </script>
 
 <style scoped>
-p {
+#rate_text {
   font-size: 4em;
   text-align: center;
 }

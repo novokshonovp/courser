@@ -5,16 +5,16 @@
 // like app/views/layouts/application.html.erb.
 
 import Vue from 'vue/dist/vue.esm'
-import Course from '../components/course.vue'
+import Rate from '../components/rate_render.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   App.vue = new Vue({
-    el: '#course',
+    el: '#root',
     methods: {
         receiveMessage: function(data) {
           this.$emit('update', data);
         }
       },
-    components: { Course }
+    components: {rate: Rate}
   })
 })
