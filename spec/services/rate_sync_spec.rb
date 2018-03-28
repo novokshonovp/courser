@@ -29,7 +29,7 @@ describe RateSync do
     context 'when forced' do
       before do
         rs.push_rate('55')
-        rs.force('100', Time.now + 10)
+        rs.force('100', Time.now + 100)
       end
       it { is_expected.to eq('100') }
     end

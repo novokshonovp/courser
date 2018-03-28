@@ -1,4 +1,6 @@
 Rails.application.configure do
+  config.default_url_options = { host: "0.0.0.0:3000" }
+  
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
 

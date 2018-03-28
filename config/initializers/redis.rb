@@ -1,3 +1,1 @@
-
-#$redis = Redis::Namespace.new(:rate, :redis => Redis.new)
-$redis = Redis.new
+$redis = Redis.new(Rails.application.config_for(:redis))
