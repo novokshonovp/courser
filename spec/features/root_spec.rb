@@ -34,9 +34,7 @@ feature "Show dollar rate", type: :feature do
 
     in_browser(:two) do
       visit admin_path
-      fill_in('course_rate', :with => forced)
-      fill_in('course_uptodate', :with => Time.now + 5.seconds)
-      click_on('Submit')
+      fill_admin_form(forced, 5)
     end
 
     in_browser(:one) do

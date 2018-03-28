@@ -1,4 +1,5 @@
-
+require 'simplecov'
+SimpleCov.start
 require 'rails_helper'
 
 describe Course do
