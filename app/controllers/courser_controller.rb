@@ -18,7 +18,7 @@ class CourserController < ApplicationController
     if @course.save
       ratesync.force(@course.rate, @course.uptodate)
       broadcast(@course)
-      redirect_to courser_admin_url
+      redirect_to admin_url
     else
       @courses = course_history
       render 'admin'

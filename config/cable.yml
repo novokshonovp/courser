@@ -1,10 +1,7 @@
-development:
-  adapter: async
-
-test:
-  adapter: async
-
-production:
+redis: &default
   adapter: redis
-  url: redis://localhost:6379/1
-  channel_prefix: courser_production
+url: redis://localhost:6379/1
+
+production: *default
+development: *default
+test: *default
